@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>جدول مباريات اليوم</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Tajawal", sans-serif;
+    }
+    body {
+      background-color: #121212;
+      color: #ffffff;
+      direction: rtl;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      color: #FFD700;
+      margin-bottom: 30px;
+      font-size: 24px;
+    }
+    .matches-container {
+      width: 90%;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+    .match-card {
+      background-color: #1E1E1E;
+      border-radius: 8px;
+      margin-bottom: 15px;
+      padding: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      transition: background-color 0.3s;
+    }
+    .match-card:hover {
+      background-color: #2A2A2A;
+      cursor: pointer;
+    }
+    .match-info {
+      display: flex;
+      flex-direction: column;
+      text-align: right;
+      flex: 1;
+      margin: 0 10px;
+    }
+    .teams {
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    .time {
+      font-size: 14px;
+      color: #cccccc;
+    }
+    .team-logo {
+      width: 40px;
+      height: 40px;
+      object-fit: contain;
+    }
+  </style>
+</head>
+<body>
+
+<h1>جدول مباريات اليوم</h1>
+
+<div class="matches-container">
+  
+  <div class="match-card" onclick="playBroadcast('https://fdxddzss.github.io/Gg/')">
+    <img class="team-logo" src="https://imagecache.365scores.com/image/upload/f_png,w_24,h_24,c_limit,q_auto:eco,dpr_3,d_Competitors:default1.png/v1/Competitors/146" alt="ريال بيتيس">
+    <div class="match-info">
+      <div class="teams">ريال بيتيس × ريال مدريد</div>
+      <div class="time">06:00 PM</div>
+    </div>
+    <img class="team-logo" src="https://imagecache.365scores.com/image/upload/f_png,w_24,h_24,c_limit,q_auto:eco,dpr_3,d_Competitors:default1.png/v4/Competitors/131" alt="ريال مدريد">
+  </div>
+
+  <div class="match-card" onclick="playBroadcast('https://fdxddzss.github.io/Gg/')">
+    <img class="team-logo" src="https://imagecache.365scores.com/image/upload/f_png,w_24,h_24,c_limit,q_auto:eco,dpr_3,d_Competitors:default1.png/v6/Competitors/134" alt="أتلتيكو مدريد">
+    <div class="match-info">
+      <div class="teams">أتلتيكو مدريد × أتلتيك بلباو</div>
+      <div class="time">08:00 PM</div>
+    </div>
+    <img class="team-logo" src="https://imagecache.365scores.com/image/upload/f_png,w_24,h_24,c_limit,q_auto:eco,dpr_3,d_Competitors:default1.png/v5/Competitors/144" alt="أتلتيك بلباو">
+  </div>
+
+  <div class="match-card" onclick="playBroadcast('https://fdxddzss.github.io/Fffjf/')">
+    <img class="team-logo" src="https://imagecache.365scores.com/image/upload/f_png,w_24,h_24,c_limit,q_auto:eco,dpr_3,d_Competitors:default1.png/v1/Competitors/110" alt="مانشستر سيتي">
+    <div class="match-info">
+      <div class="teams">مانشستر سيتي × بليموث</div>
+      <div class="time">10:00 PM</div>
+    </div>
+    <img class="team-logo" src="https://imagecache.365scores.com/image/upload/f_png,w_24,h_24,c_limit,q_auto:eco,dpr_3,d_Competitors:default1.png/v3/Competitors/13" alt="بليموث">
+  </div>
+
+  <div class="match-card" onclick="playBroadcast('https://fdxddzss.github.io/Fffjf/')">
+    <img class="team-logo" src="https://imagecache.365scores.com/image/upload/f_png,w_24,h_24,c_limit,q_auto:eco,dpr_3,d_Competitors:default1.png/v3/Competitors/480" alt="باريس سان جيرمان">
+    <div class="match-info">
+      <div class="teams">باريس سان جيرمان × ليل</div>
+      <div class="time">04:00 PM</div>
+    </div>
+    <img class="team-logo" src="https://imagecache.365scores.com/image/upload/f_png,w_24,h_24,c_limit,q_auto:eco,dpr_3,d_Competitors:default1.png/v2/Competitors/478" alt="ليل">
+  </div>
+
+</div>
+
+<script>
+  function playBroadcast(link) {
+    if (link !== "ضع رابط البث هنا") {
+      window.location.href = link;
+    } else {
+      alert("رابط البث غير متوفر حالياً!");
+    }
+  }
+</script>
+
+</body>
+</html>
